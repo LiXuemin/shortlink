@@ -27,5 +27,7 @@ public interface UserService extends IService<UserDO> {
      * @return 如果用户存在则返回true，否则返回false
      */
     Boolean hasUserName(String username);
+
+    Boolean initBloomFilter();
 }
 

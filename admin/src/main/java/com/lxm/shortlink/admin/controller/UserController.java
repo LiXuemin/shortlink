@@ -43,5 +43,15 @@ public class UserController {
         return Results.success(userService.hasUserName(username));
     }
 
+    /**
+     * 初始化布隆过滤器
+     * @return 初始化结果
+     */
+    @GetMapping("/api/shortlink/v1/user/initBloomFilter")
+    public Result<Boolean> initBloomFilter() {
+        return Results.success(userService.initBloomFilter());
+    }
+
+
 
 }
