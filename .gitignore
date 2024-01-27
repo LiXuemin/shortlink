@@ -11,7 +11,7 @@ target/
 *.iws
 *.iml
 *.ipr
-
+.idea/
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -56,3 +56,4 @@ build/
 /.idea/sonarlint/securityhotspotstore/e/f/efc4b1b041fcc2f442f48568cdf5fe78dbb3a2fa
 /.idea/sonarlint/issuestore/index.pb
 /.idea/sonarlint/securityhotspotstore/index.pb
+/.idea/
