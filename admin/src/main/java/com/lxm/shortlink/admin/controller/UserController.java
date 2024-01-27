@@ -18,8 +18,15 @@ public class UserController {
 
     private final UserService userService;
 
+    /**
+     * 根据用户名获取用户信息
+     *
+     * @param username 用户名
+     * @return 用户信息
+     */
     @GetMapping("/api/shortlink/v1/user/{username}")
     public UserRespDTO getUserByUsername(@PathVariable("username") String username) {
         return userService.getUserByUsername(username);
     }
+
 }
