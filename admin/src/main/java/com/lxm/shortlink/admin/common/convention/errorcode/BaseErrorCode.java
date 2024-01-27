@@ -2,7 +2,7 @@ package com.lxm.shortlink.admin.common.convention.errorcode;
 
 /**
  * @author lixuemin
- * @description: TODO
+ * @description:
  * @date 2024-01-27
  */
 public enum BaseErrorCode implements IErrorCode{
