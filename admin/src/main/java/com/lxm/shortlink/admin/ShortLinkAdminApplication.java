@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2024-01-27
  */
 @SpringBootApplication
-@MapperScan("com.lxm.shortlink.admin.dao.mapper")
+@MapperScan(basePackages = {"com.lxm.shortlink.admin.dao.mapper"})
 public class ShortLinkAdminApplication {
 
     public static void main(String[] args) {
