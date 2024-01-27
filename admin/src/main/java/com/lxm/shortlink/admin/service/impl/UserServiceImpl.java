@@ -29,4 +29,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
         final UserDO userDO = baseMapper.selectOne(queryWrapper);
         return beanConverter.userDO2UserRespDTO(userDO);
     }
+
+    @Override
+    public Boolean hasUserName(String username) {
+        final LambdaQueryWrapper<UserDO> queryWrapper = Wrappers.lambdaQuery(UserDO.class)
+                .eq(UserDO::getUsername, username);
+        final UserDO userDO = baseMapper.selectOne(queryWrapper);
+        return userDO != null;
+    }
 }
